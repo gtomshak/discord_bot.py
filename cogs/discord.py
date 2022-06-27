@@ -61,7 +61,7 @@ class Discord_Info(commands.Cog):
 
     @commands.command(aliases=["joindate", "joined"])
     @commands.guild_only()
-    async def joinedat(self, ctx, *, user: discord.Member = None):
+    async def joinedate(self, ctx, *, user: discord.Member = None):
         """ Check when a user joined the current server """
         user = user or ctx.author
         await ctx.send(
